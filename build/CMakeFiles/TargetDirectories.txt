@@ -1,0 +1,3 @@
+C:/Users/rxzz0/Desktop/coding/BeatSaberMods/MappingExtensions/build/CMakeFiles/MappingExtensions.dir
+C:/Users/rxzz0/Desktop/coding/BeatSaberMods/MappingExtensions/build/CMakeFiles/edit_cache.dir
+C:/Users/rxzz0/Desktop/coding/BeatSaberMods/MappingExtensions/build/CMakeFiles/rebuild_cache.dir

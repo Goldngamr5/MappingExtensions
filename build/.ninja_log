@@ -1,0 +1,10 @@
+# ninja log v5
+27	140	6637915105217953	CMakeFiles/MappingExtensions_0_20_2.dir/extern/includes/beatsaber-hook/src/inline-hook/relocate.c.o	309116d97ef0a320
+13	113	6637915104957939	CMakeFiles/MappingExtensions_0_20_2.dir/extern/includes/beatsaber-hook/src/inline-hook/inlineHook.c.o	18bf2029b0ea7e45
+0	7594	6637915179522801	CMakeFiles/MappingExtensions_0_20_2.dir/src/main.cpp.o	476c4817dc84d1f3
+43	910	6637915112776575	CMakeFiles/MappingExtensions_0_20_2.dir/extern/includes/beatsaber-hook/src/inline-hook/And64InlineHook.cpp.o	dc3894cd85c151b5
+51	458	6656871622914345	CMakeFiles/MappingExtensions.dir/extern/includes/beatsaber-hook/src/inline-hook/inlineHook.c.o	95a8721ca23e5a6
+79	463	6656871622904338	CMakeFiles/MappingExtensions.dir/extern/includes/beatsaber-hook/src/inline-hook/relocate.c.o	2d233ab53066859
+93	1150	6656871629883418	CMakeFiles/MappingExtensions.dir/extern/includes/beatsaber-hook/src/inline-hook/And64InlineHook.cpp.o	6c5e3c9ef6418779
+7	4365	6656913111922217	CMakeFiles/MappingExtensions.dir/src/main.cpp.o	6e1fddf48508a44
+4369	9688	6656913129252279	libMappingExtensions.so	696c9e5c50e5f5d9

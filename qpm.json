@@ -1,0 +1,50 @@
+{
+  "sharedDir": "shared",
+  "dependenciesDir": "extern",
+  "info": {
+    "name": "MappingExtensions",
+    "id": "MappingExtensions",
+    "version": "0.20.4",
+    "url": "",
+    "additionalData": {
+      "overrideSoName": "libMappingExtensions.so"
+    }
+  },
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "3.6.7",
+      "additionalData": {
+        "extraFiles": [
+          "src/inline-hook"
+        ]
+      }
+    },
+    {
+      "id": "codegen",
+      "versionRange": "0.19.3",
+      "additionalData": {}
+    },
+    {
+      "id": "pinkcore",
+      "versionRange": "1.6.4",
+      "additionalData": {}
+    },
+    {
+      "id": "qosmetics-api",
+      "versionRange": "*",
+      "additionalData": {}
+    },
+    {
+      "id": "config-utils",
+      "versionRange": "*",
+      "additionalData": {}
+    },
+    {
+      "id": "modloader",
+      "versionRange": "*",
+      "additionalData": {}
+    }
+  ],
+  "additionalData": {}
+}

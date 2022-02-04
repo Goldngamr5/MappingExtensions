@@ -1,0 +1,151 @@
+{
+  "config": {
+    "sharedDir": "shared",
+    "dependenciesDir": "extern",
+    "info": {
+      "name": "MappingExtensions",
+      "id": "MappingExtensions",
+      "version": "0.20.4",
+      "url": "",
+      "additionalData": {
+        "overrideSoName": "libMappingExtensions.so"
+      }
+    },
+    "dependencies": [
+      {
+        "id": "beatsaber-hook",
+        "versionRange": "=3.6.7",
+        "additionalData": {
+          "extraFiles": [
+            "src/inline-hook"
+          ]
+        }
+      },
+      {
+        "id": "codegen",
+        "versionRange": "=0.19.3",
+        "additionalData": {}
+      },
+      {
+        "id": "pinkcore",
+        "versionRange": "=1.6.4",
+        "additionalData": {}
+      },
+      {
+        "id": "qosmetics-api",
+        "versionRange": "*",
+        "additionalData": {}
+      },
+      {
+        "id": "config-utils",
+        "versionRange": "*",
+        "additionalData": {}
+      },
+      {
+        "id": "modloader",
+        "versionRange": "*",
+        "additionalData": {}
+      }
+    ],
+    "additionalData": {}
+  },
+  "restoredDependencies": [
+    {
+      "dependency": {
+        "id": "modloader",
+        "versionRange": "*",
+        "additionalData": {
+          "soLink": "https://github.com/sc2ad/QuestLoader/releases/download/v1.2.3/libmodloader64.so",
+          "overrideSoName": "libmodloader.so",
+          "branchName": "version-v1.2.3"
+        }
+      },
+      "version": "1.2.3"
+    },
+    {
+      "dependency": {
+        "id": "libil2cpp",
+        "versionRange": "^0.2.3",
+        "additionalData": {
+          "headersOnly": true
+        }
+      },
+      "version": "0.2.3"
+    },
+    {
+      "dependency": {
+        "id": "config-utils",
+        "versionRange": "*",
+        "additionalData": {
+          "headersOnly": true,
+          "soLink": "https://github.com/darknight1050/config-utils/releases/download/v0.7.1/libconfig-utils_test.so",
+          "debugSoLink": "https://github.com/darknight1050/config-utils/releases/download/v0.7.1/debug_libconfig-utils_test.so",
+          "overrideSoName": "libconfig-utils_test.so",
+          "branchName": "version-v0.7.1"
+        }
+      },
+      "version": "0.7.1"
+    },
+    {
+      "dependency": {
+        "id": "qosmetics-api",
+        "versionRange": "*",
+        "additionalData": {
+          "headersOnly": true,
+          "branchName": "version-v0.1.4"
+        }
+      },
+      "version": "0.1.4"
+    },
+    {
+      "dependency": {
+        "id": "conditional-dependencies",
+        "versionRange": "^0.2.0",
+        "additionalData": {
+          "headersOnly": true,
+          "branchName": "version-v0.2.0"
+        }
+      },
+      "version": "0.2.0"
+    },
+    {
+      "dependency": {
+        "id": "pinkcore",
+        "versionRange": "=1.6.4",
+        "additionalData": {
+          "soLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.4/libpinkcore.so",
+          "debugSoLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.4/debug_libpinkcore.so",
+          "overrideSoName": "libpinkcore.so",
+          "modLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.4/PinkCore.qmod",
+          "branchName": "version-v1.6.4"
+        }
+      },
+      "version": "1.6.4"
+    },
+    {
+      "dependency": {
+        "id": "codegen",
+        "versionRange": "=0.19.3",
+        "additionalData": {
+          "soLink": "https://github.com/sc2ad/BeatSaber-Quest-Codegen/releases/download/v0.19.3/libcodegen.so",
+          "overrideSoName": "libcodegen.so",
+          "modLink": "https://github.com/sc2ad/BeatSaber-Quest-Codegen/releases/download/v0.19.3/Codegen.qmod",
+          "branchName": "version-v0.19.3"
+        }
+      },
+      "version": "0.19.3"
+    },
+    {
+      "dependency": {
+        "id": "beatsaber-hook",
+        "versionRange": "=3.6.7",
+        "additionalData": {
+          "soLink": "https://github.com/sc2ad/beatsaber-hook/releases/download/v3.6.7/libbeatsaber-hook_3_6_7.so",
+          "debugSoLink": "https://github.com/sc2ad/beatsaber-hook/releases/download/v3.6.7/debug_libbeatsaber-hook_3_6_7.so",
+          "branchName": "version-v3.6.7"
+        }
+      },
+      "version": "3.6.7"
+    }
+  ]
+}
