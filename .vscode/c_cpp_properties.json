@@ -1,27 +1,30 @@
 {
-  "configurations": [
-    {
-      "defines": [
-        "_DEBUG",
-        "UNICODE",
-        "_UNICODE",
-        "__ANDROID__",
-        "VERSION=\"0.20.3\""
-      ],
-      "includePath": [
-        "${workspaceFolder}/include",
-        "${workspaceFolder}/shared",
-        "${workspaceFolder}/extern/includes",
-        "${workspaceFolder}/extern/libil2cpp/il2cpp/libil2cpp",
-        "${workspaceFolder}/../../../android-ndk-r22b/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include",
-        "${workspaceFolder}/../../../android-ndk-r22b/sources/cxx-stl/llvm-libc++/include",
-        "${workspaceFolder}/../../../android-ndk-r22b/sources/cxx-stl/llvm-libc++abi/include"
-      ],
-      "name": "Quest",
-      "cStandard": "gnu17",
-      "cppStandard": "gnu++20",
-      "intelliSenseMode": "clang-arm64"
-    }
-  ],
-  "version": 4
+    "configurations": [
+        {
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "__ANDROID__",
+                "VERSION=\"0.20.3\""
+            ],
+            "includePath": [
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/extern/includes",
+                "${workspaceFolder}/extern/includes/codegen/include/",
+                "${workspaceFolder}/extern/includes/libil2cpp",
+                "${workspaceFolder}/extern/libil2cpp",
+                "Z:/noodleExtentionsQuestport/android-ndk-r23-windows/android-ndk-r23/toolchains/llvm/prebuilt/windows-x86_64/sysroot/usr/include",
+                "Z:/noodleExtentionsQuestport/android-ndk-r23-windows/android-ndk-r23/toolchains/renderscript/prebuilt/windows-x86_64/clang-include",
+                "Z:/noodleExtentionsQuestport/android-ndk-r23-windows/android-ndk-r23/sources/cxx-stl/llvm-libc++/include",
+                "Z:/noodleExtentionsQuestport/android-ndk-r23-windows/android-ndk-r23/sources/cxx-stl/llvm-libc++abi/include"
+            ],
+            "name": "Quest",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "windows-gcc-arm64",
+            "compilerPath": "C:\\MinGW\\bin\\gcc.exe"
+        }
+    ],
+    "version": 4
 }

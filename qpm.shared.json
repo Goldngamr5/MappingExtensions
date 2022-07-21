@@ -5,7 +5,7 @@
     "info": {
       "name": "MappingExtensions",
       "id": "MappingExtensions",
-      "version": "0.20.4",
+      "version": "0.20.5",
       "url": "",
       "additionalData": {
         "overrideSoName": "libMappingExtensions.so"
@@ -14,7 +14,7 @@
     "dependencies": [
       {
         "id": "beatsaber-hook",
-        "versionRange": "=3.6.7",
+        "versionRange": "=3.9.0",
         "additionalData": {
           "extraFiles": [
             "src/inline-hook"
@@ -23,17 +23,12 @@
       },
       {
         "id": "codegen",
-        "versionRange": "=0.19.3",
+        "versionRange": "=0.25.0",
         "additionalData": {}
       },
       {
         "id": "pinkcore",
-        "versionRange": "=1.6.4",
-        "additionalData": {}
-      },
-      {
-        "id": "qosmetics-api",
-        "versionRange": "*",
+        "versionRange": "=1.6.10",
         "additionalData": {}
       },
       {
@@ -74,20 +69,6 @@
     },
     {
       "dependency": {
-        "id": "config-utils",
-        "versionRange": "*",
-        "additionalData": {
-          "headersOnly": true,
-          "soLink": "https://github.com/darknight1050/config-utils/releases/download/v0.7.1/libconfig-utils_test.so",
-          "debugSoLink": "https://github.com/darknight1050/config-utils/releases/download/v0.7.1/debug_libconfig-utils_test.so",
-          "overrideSoName": "libconfig-utils_test.so",
-          "branchName": "version-v0.7.1"
-        }
-      },
-      "version": "0.7.1"
-    },
-    {
-      "dependency": {
         "id": "qosmetics-api",
         "versionRange": "*",
         "additionalData": {
@@ -96,6 +77,20 @@
         }
       },
       "version": "0.1.4"
+    },
+    {
+      "dependency": {
+        "id": "config-utils",
+        "versionRange": "0.8.0",
+        "additionalData": {
+          "headersOnly": true,
+          "soLink": "https://github.com/darknight1050/config-utils/releases/download/v0.8.0/libconfig-utils_test.so",
+          "debugSoLink": "https://github.com/darknight1050/config-utils/releases/download/v0.8.0/debug_libconfig-utils_test.so",
+          "overrideSoName": "libconfig-utils_test.so",
+          "branchName": "version-v0.8.0"
+        }
+      },
+      "version": "0.8.0"
     },
     {
       "dependency": {
@@ -111,41 +106,41 @@
     {
       "dependency": {
         "id": "pinkcore",
-        "versionRange": "=1.6.4",
+        "versionRange": "=1.6.10",
         "additionalData": {
-          "soLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.4/libpinkcore.so",
-          "debugSoLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.4/debug_libpinkcore.so",
+          "soLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.10/libpinkcore.so",
+          "debugSoLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.10/debug_libpinkcore.so",
           "overrideSoName": "libpinkcore.so",
-          "modLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.4/PinkCore.qmod",
-          "branchName": "version-v1.6.4"
+          "modLink": "https://github.com/BSMGPink/PinkCore/releases/download/v1.6.10/PinkCore.qmod",
+          "branchName": "version-v1.6.10"
         }
       },
-      "version": "1.6.4"
+      "version": "1.6.10"
     },
     {
       "dependency": {
         "id": "codegen",
-        "versionRange": "=0.19.3",
+        "versionRange": "=0.25.0",
         "additionalData": {
-          "soLink": "https://github.com/sc2ad/BeatSaber-Quest-Codegen/releases/download/v0.19.3/libcodegen.so",
+          "soLink": "https://github.com/sc2ad/BeatSaber-Quest-Codegen/releases/download/v0.25.0/libcodegen.so",
           "overrideSoName": "libcodegen.so",
-          "modLink": "https://github.com/sc2ad/BeatSaber-Quest-Codegen/releases/download/v0.19.3/Codegen.qmod",
+          "modLink": "https://github.com/sc2ad/BeatSaber-Quest-Codegen/releases/download/v0.25.0/Codegen.qmod",
           "branchName": "version-v0.19.3"
         }
       },
-      "version": "0.19.3"
+      "version": "0.25.0"
     },
     {
       "dependency": {
         "id": "beatsaber-hook",
-        "versionRange": "=3.6.7",
+        "versionRange": "=3.9.0",
         "additionalData": {
-          "soLink": "https://github.com/sc2ad/beatsaber-hook/releases/download/v3.6.7/libbeatsaber-hook_3_6_7.so",
-          "debugSoLink": "https://github.com/sc2ad/beatsaber-hook/releases/download/v3.6.7/debug_libbeatsaber-hook_3_6_7.so",
-          "branchName": "version-v3.6.7"
+          "soLink": "https://github.com/sc2ad/beatsaber-hook/releases/download/v3.9.0/libbeatsaber-hook_3_9_0.so",
+          "debugSoLink": "https://github.com/sc2ad/beatsaber-hook/releases/download/v3.9.0/debug_libbeatsaber-hook_3_9_0.so",
+          "branchName": "version-v3.9.0"
         }
       },
-      "version": "3.6.7"
+      "version": "3.9.0"
     }
   ]
 }

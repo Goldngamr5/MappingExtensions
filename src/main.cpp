@@ -25,10 +25,10 @@
 #include "GlobalNamespace/BeatmapLineData.hpp"
 #include "GlobalNamespace/BeatmapObjectData.hpp"
 #include "GlobalNamespace/BeatmapObjectSpawnMovementData.hpp"
-#include "GlobalNamespace/BeatmapObjectType.hpp"
-#include "GlobalNamespace/BeatmapSaveData_EventData.hpp"
-#include "GlobalNamespace/BeatmapSaveData_NoteData.hpp"
-#include "GlobalNamespace/BeatmapSaveData_ObstacleData.hpp"
+#include "BeatmapSaveDataVersion2_6_0AndEarlier/BeatmapSaveData_BeatmapObjectType.hpp"
+#include "BeatmapSaveDataVersion2_6_0AndEarlier/BeatmapSaveData_EventData.hpp"
+#include "BeatmapSaveDataVersion2_6_0AndEarlier/BeatmapSaveData_NoteData.hpp"
+#include "BeatmapSaveDataVersion2_6_0AndEarlier/BeatmapSaveData_ObstacleData.hpp"
 #include "GlobalNamespace/IDifficultyBeatmap.hpp"
 #include "GlobalNamespace/IDifficultyBeatmapSet.hpp"
 #include "GlobalNamespace/NoteCutDirectionExtensions.hpp"
@@ -37,7 +37,7 @@
 #include "GlobalNamespace/ObstacleController.hpp"
 #include "GlobalNamespace/ObstacleData.hpp"
 #include "GlobalNamespace/SimpleColorSO.hpp"
-#include "GlobalNamespace/SpawnRotationProcessor.hpp"
+#include "GlobalNamespace/SpawnRotationBeatmapEventDataProcessor.hpp"
 #include "GlobalNamespace/StandardLevelDetailView.hpp"
 #include "GlobalNamespace/StretchableObstacle.hpp"
 #include "GlobalNamespace/FlyingScoreSpawner.hpp"
@@ -65,7 +65,7 @@ using namespace System::Collections;
 
 static ModInfo modInfo;
 
-Logger& logger()
+Logger& logger(const ModInfo info, LoggerOptions options_)
 {
     static auto logger = new Logger(modInfo, LoggerOptions(false, true));
     return *logger;
@@ -74,18 +74,18 @@ Logger& logger()
 extern "C" void setup(ModInfo& info)
 {
     info.id = "MappingExtensions";
-    info.version = "0.20.4";
+    info.version = "0.20.5";
     modInfo = info;
-    logger().info("Leaving setup!");
+    logger(modInfo).info("Leaving setup!");
 }
 
 [[maybe_unused]] static void dump_real(int before, int after, void* ptr)
 {
-    logger().info("Dumping Immediate Pointer: %p: %lx", ptr, *reinterpret_cast<long*>(ptr));
+    logger(modInfo).info("Dumping Immediate Pointer: %p: %lx", ptr, *reinterpret_cast<long*>(ptr));
     auto begin = static_cast<long*>(ptr) - before;
     auto end   = static_cast<long*>(ptr) + after;
     for (auto cur = begin; cur != end; ++cur) {
-        logger().info("0x%lx: %lx", (long)cur - (long)ptr, *cur);
+        logger(modInfo).info("0x%lx: %lx", (long)cur - (long)ptr, *cur);
     }
 }
 
